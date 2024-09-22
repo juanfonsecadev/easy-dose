@@ -74,9 +74,9 @@ const DosageCalculator = () => {
     }, [unidadeDosagem]);
 
     return (
-        <div>
+        <div >
             {/* Dropdown para selecionar o medicamento */}
-            <select onChange={handleMedicamentoChange}>
+            <select onChange={handleMedicamentoChange} className='option-field'>
                 <option value="">Selecione um medicamento</option>
                 {medicamentos.map((medicamento) => (
                     <option key={medicamento.id} value={medicamento.nome}>
