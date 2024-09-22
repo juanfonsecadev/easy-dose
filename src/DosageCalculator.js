@@ -108,7 +108,7 @@ const DosageCalculator = () => {
         </div>
       </div>
 
-      <Input label="Dosagem" value={dosagem} onChange={setDosagem} unit={unidadeDosagem} setUnit={setUnidadeDosagem} />
+      <Input label="Dosagem Terapêutica" value={dosagem} onChange={setDosagem} unit={unidadeDosagem} setUnit={setUnidadeDosagem} />
       <Button title="Calcular" onPress={calcularDosagem} />
 
       {resultado && <Result value={unidadeDosagem === 'ml' ? resultado.toFixed(2) : resultado.toString()} unit={unidadeDosagem} />}
