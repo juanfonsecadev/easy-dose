@@ -1,13 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Importando o componente Link
+import './Header.css';
 
 function Header() {
   return (
-    <header>
+    <header className="header">
+        <div id="logo">
+            <p>SIEMENS</p>
+        </div>
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/add">Adicionar Medicamento</Link></li>
+          <li><Link to="/" className="nav-link">Home</Link></li> {/* Usando o componente Link */}
+          <li><Link to="/add" className="nav-link">Adicionar Medicamento</Link></li> {/* Usando o componente Link */}
         </ul>
       </nav>
     </header>
